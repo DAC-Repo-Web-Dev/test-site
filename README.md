@@ -1,3 +1,12 @@
+## SUPER SPECIAL NOTE FROM DAVID (hope this isn't too obvious or condescending or whatever) --- 
+please first make sure you have the latest version of node.js installed to compile this correctly. You can update your version of node using nvm (Node Version Manager), which you can install using this guide (https://github.com/nvm-sh/nvm), or if you do not yet have node installed you can go ahead and install it here (https://nodejs.org/en/download/).
+
+Please also make sure you have the latest version of npm installed! NPM (Node Package Manager) enables you to consult the online npm repository from the command line, allowing easy install of any dependency modules you might need for node projects. If you just did a fresh install of node.js you don't need to do this, but if its been on your machine for a while you should try the command 'npm update -g'. 
+
+A list of all dependencies needed for a Node project is contained inside the package.json file. Dependencies can sometimes be very large and thus would be cumbersome to push and pull to/from GitHub each time the project is used or edited. As a result of this, git ignores the dependency 'node_modules' file when pushing a project to GitHub - there is no 'node_modules' folder in this repository. So, once you clone the project into your drive you'll need to get 'node_modules' back to run the project properly. You can do this by cd-ing into the project folder and running 'npm install'. This command accesses the 'package.json' file to find the list of dependency modules, and installs them along with their own respective dependencies! The 'node_modules' file should appear after this, and you should be able to run 'npm start' without any hassle :)
+
+Please message me if you encounter any issues!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
